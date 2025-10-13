@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Maidana;Alejandro;;;
+FN:Alejandro Maidana
+ORG:KIU System Solutions
+TITLE:QA Manager
+EMAIL;TYPE=WORK:amaidana@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/alejandro-maidana-601b724
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Alejandro Maidana
+END:VCARD
