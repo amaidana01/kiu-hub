@@ -225,36 +225,35 @@ export default function KiuHub() {
           </p>
 
           {!contactSubmitted ? (
-            <form
+             <form
   onSubmit={async (e) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
-    const data = new FormData(form);
+    const data = Object.fromEntries(new FormData(form).entries());
 
-    // Detecta si estás en localhost o producción
-    const baseAction =
-      window.location.hostname === "localhost"
-        ? "https://formspree.io/f/xldpowaa?origin=http://localhost:3000"
-        : "https://formspree.io/f/xldpowaa";
+    try {
+      const response = await fetch("https://formspree.io/f/xldpowaa", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    const response = await fetch(baseAction, {
-      method: "POST",
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    if (response.ok) {
-      setContactSubmitted(true);
-      form.reset();
-    } else {
-      const err = await response.text();
-      console.error("Formspree error:", err);
-      alert("There was a problem sending your message. Please try again.");
+      if (response.ok) {
+        setContactSubmitted(true);
+        form.reset();
+      } else {
+        const err = await response.text();
+        console.error("Formspree error:", err);
+        alert("Formspree rejected the submission. Check fields or email config.");
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      alert("There was a network problem sending your message.");
     }
   }}
-  action="https://formspree.io/f/xldpowaa"
   method="POST"
   className="space-y-3"
 >
@@ -312,6 +311,7 @@ export default function KiuHub() {
     <span className="text-gray-300">amaidana@kiusys.com</span>
   </p>
 </form>
+
           ) : (
             <div className="text-center bg-[#14103A] rounded-2xl p-6 ring-1 ring-white/10">
               <h3 className="text-lg font-semibold mb-2">
