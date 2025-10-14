@@ -2,46 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fuente base y fondo corporativo KIU */
-html, body {
-  @apply font-inter bg-kiu-gradient text-white min-h-screen;
+/* ============================
+   🧭 BASE DE ESTILOS KIU HUB
+   ============================ */
+
+/* Fuente base global */
+html {
+  @apply font-inter text-white;
 }
 
-/* Mejora de transiciones y suavidad */
-button, .btn, .card {
+/* Fondo base del body (fallback sólido) */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background-color: #0C0E2B; /* color base más oscuro del gradiente */
+}
+
+/* Contenedor principal de Next.js 
+   (asegura gradiente estable y scroll solo interno) */
+#__next,
+main {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* Fondo corporativo KIU con fallback sólido */
+  background-color: #0C0E2B; /* fallback instantáneo */
+  background-image: linear-gradient(to bottom, #180B3A, #2E0E73, #0C0E2B);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ============================
+   💫 INTERACTIVIDAD Y DETALLES
+   ============================ */
+
+/* Transiciones suaves */
+button,
+.btn,
+.card {
   @apply transition-all duration-200 ease-in-out;
 }
 
-/* Efecto hover general para botones y tarjetas */
-button:hover, .btn:hover, .card:hover {
+/* Hover general (ligero zoom y sombra) */
+button:hover,
+.btn:hover,
+.card:hover {
   @apply scale-[1.02] shadow-lg;
 }
 
-/* Corrección de scroll y padding en móviles */
-body {
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-}
+/* ============================
+   📱 OPTIMIZACIÓN MÓVIL
+   ============================ */
 
-/* Prevent mobile zoom on input focus (iOS Safari fix) */
+/* Evita zoom automático en inputs (iOS Safari) */
 input,
 select,
 textarea {
   font-size: 16px !important;
 }
 
-/* Prevent white gap / scroll bounce on mobile */
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-  overscroll-behavior: none; /* Desactiva el rebote */
-  background-color: #0C0E2B; /* Asegura fondo base igual al gradiente */
+/* Corrección de desplazamiento en formularios largos */
+input,
+select,
+textarea,
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
+/* Desactiva rebote visual del scroll */
+html,
 body {
-  position: fixed;
-  width: 100%;
-  overflow-y: auto;
+  overscroll-behavior: none;
 }
+
+/* ============================
+   ✅ RESULTADO
+   - Fondo gradiente siempre visible
+   - Sin scroll global ni rebotes blancos
+   - Scroll suave solo dentro del contenido
+   - Total compatibilidad iOS / Android
+   - Apariencia idéntica a la versión Vercel
+   ============================ */
