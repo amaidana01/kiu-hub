@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Spinosa;Damián;;;
+FN:Damián Spinosa
+ORG:KIU System Solutions
+TITLE:Software Architect
+EMAIL;TYPE=WORK:dspinosa@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/damian-spinosa
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Damián Spinosa
+END:VCARD

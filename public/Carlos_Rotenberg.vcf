@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Rotenberg;Carlos;;;
+FN:Carlos Rotenberg
+ORG:KIU System Solutions
+TITLE:DevOps Manager
+EMAIL;TYPE=WORK:crotenberg@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/crotenberg
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Carlos Rotenberg
+END:VCARD

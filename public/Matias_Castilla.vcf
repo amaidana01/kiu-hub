@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Castilla;Matías;;;
+FN:Matías Castilla
+ORG:KIU System Solutions
+TITLE:Tech Lead
+EMAIL;TYPE=WORK:mcastilla@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/matias-castilla-2282447
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Matías Castilla
+END:VCARD

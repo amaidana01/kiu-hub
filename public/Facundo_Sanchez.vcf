@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Sanchez;Facundo;;;
+FN:Facundo Sanchez
+ORG:KIU System Solutions
+TITLE:Tech Lead
+EMAIL;TYPE=WORK:fsanchez@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/facundosanchez
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Facundo Sanchez
+END:VCARD
