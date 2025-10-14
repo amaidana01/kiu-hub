@@ -76,7 +76,7 @@ export const team: Record<string, TeamProfile> = {
     name: "Damián Spinosa",
     role: "Software Architect",
     email: "dspinosa@kiusys.com",
-    vcard: "/Damina_Spinosa.vcf",
+    vcard: "/Damian_Spinosa.vcf",
     linkedin: "https://www.linkedin.com/in/damian-spinosa/",
     qr: "/qrs/QR_DamianSpinosa.png",
   },
