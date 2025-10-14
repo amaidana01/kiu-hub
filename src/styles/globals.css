@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tipografía base */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #0C0E2B;
-  color: white;
+/* Fuente base y fondo corporativo KIU */
+html, body {
+  @apply font-inter bg-kiu-gradient text-white min-h-screen;
 }
 
-/* Suaves transiciones de botones y tarjetas */
+/* Mejora de transiciones y suavidad */
 button, .btn, .card {
-  transition: all 0.25s ease;
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Efecto hover general para botones y tarjetas */
+button:hover, .btn:hover, .card:hover {
+  @apply scale-[1.02] shadow-lg;
+}
+
+/* Corrección de scroll y padding en móviles */
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }

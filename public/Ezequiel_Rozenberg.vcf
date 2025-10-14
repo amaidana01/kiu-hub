@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ezequiel Rozenberg;;;
+FN:Ezequiel Rozenberg
+ORG:KIU System Solutions
+TITLE:Operations Manager
+EMAIL;TYPE=WORK:erozenberg@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/erozenberg
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Ezequiel Rozenberg
+END:VCARD

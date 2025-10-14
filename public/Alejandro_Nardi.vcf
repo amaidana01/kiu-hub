@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Alejandro Nardi;;;
+FN:Alejandro Nardi
+ORG:KIU System Solutions
+TITLE:COO
+EMAIL;TYPE=WORK:anardi@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/alejandronardi
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Alejandro Nardi
+END:VCARD

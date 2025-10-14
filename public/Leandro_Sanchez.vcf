@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Leandro Sanchez;;;
+FN:Leandro Sanchez
+ORG:KIU System Solutions
+TITLE:CTO
+EMAIL;TYPE=WORK:lsanchez@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/lxsanchez
+item1.X-ABLabel:LinkedIn
+NOTE:AWS Las Vegas - KIUSYS - Leandro Sanchez
+END:VCARD
