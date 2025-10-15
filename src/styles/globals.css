@@ -84,7 +84,7 @@ body {
 
 @media (max-width: 640px) {
   html {
-    font-size: 17px; /* antes 16px por defecto */
+    font-size: 18px; /* antes 16px por defecto */
   }
 }
 
