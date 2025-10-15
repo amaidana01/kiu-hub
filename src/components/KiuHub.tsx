@@ -45,14 +45,21 @@ export default function KiuHub({ profile }: { profile: any }) {
             <p className="text-xs text-gray-400">
               Empowering aviation with intelligent technology
             </p>
+
+            {/* ✅ Ajuste: quito el atributo “download” */}
             <a
               href={profile.vcard}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-[#00BFFF] text-xs hover:underline mt-2"
             >
               <Download className="w-3 h-3" />
-              Download my vCard
+              Save my Contact
             </a>
+
+            <p className="text-[10px] text-gray-500 mt-1">
+              (Opens directly on iPhone / downloadable on Android)
+            </p>
           </div>
 
           {/* MAIN CARDS */}
@@ -132,100 +139,6 @@ export default function KiuHub({ profile }: { profile: any }) {
         </motion.div>
       )}
 
-      {/* ABOUT VIEW */}
-      {view === "about" && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-left space-y-4 max-w-sm"
-        >
-          <Button
-            onClick={() => setView("home")}
-            className="mb-4 bg-[#3B257A] text-white hover:opacity-90 text-sm"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" /> Back
-          </Button>
-
-          <h2 className="text-lg font-semibold text-white">
-            About KIU & Solutions
-          </h2>
-
-          <p className="text-sm text-gray-300 leading-relaxed">
-            KIU System Solutions is a global technology company dedicated to
-            empowering the aviation and travel industries through digital
-            innovation. With more than two decades of experience, KIU provides
-            end-to-end, cloud-based solutions designed to enhance operational
-            efficiency, customer experience, and revenue optimization for
-            airlines and travel businesses worldwide.
-          </p>
-
-          <p className="text-sm text-gray-300 leading-relaxed">
-            Our suite of products covers Passenger Service Systems (PSS),
-            e-commerce, distribution, operations, and AI-powered automation.
-            KIU’s technology is scalable, accessible, and future-ready —
-            enabling our partners to grow seamlessly in an evolving digital
-            landscape.
-          </p>
-
-          <p className="text-sm text-gray-300 leading-relaxed">
-            At the forefront of this innovation stands{" "}
-            <strong className="text-white">KIUT</strong>, our flagship
-            conversational AI assistant, delivering intelligent, multilingual
-            interactions that transform how airlines and passengers connect.
-          </p>
-
-          <div className="pt-4">
-            <a
-              href="https://www.kiusys.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-[#00BFFF] text-sm hover:underline"
-            >
-              Visit our official website
-            </a>
-          </div>
-        </motion.div>
-      )}
-
-      {/* DEMO VIEW */}
-      {view === "demo" && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-left max-w-sm"
-        >
-          <Button
-            onClick={() => setView("home")}
-            className="mb-4 bg-[#3B257A] text-white hover:opacity-90 text-sm"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" /> Back
-          </Button>
-
-          <h2 className="text-lg font-semibold text-white mb-2">
-            KIUT — Our Flagship AI Bot
-          </h2>
-          <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-            KIUT is KIU’s AI-powered virtual assistant, designed to redefine how
-            airlines and travel companies engage with their customers. Through
-            conversational intelligence, it provides real-time support, sales,
-            and service across multiple digital channels — from booking to
-            post-flight interactions.
-          </p>
-
-          <div className="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-white/10">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/E1_iYb7N-VU"
-              title="KIUT AI Demo"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </motion.div>
-      )}
-
       {/* CONTACT VIEW */}
       {view === "contact" && (
         <motion.div
@@ -268,7 +181,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                   } else {
                     alert("Error sending email, please try again.");
                   }
-                } catch (error) {
+                } catch {
                   alert("Network error while sending message.");
                 }
               }}
@@ -337,13 +250,17 @@ export default function KiuHub({ profile }: { profile: any }) {
                 Your message has been received. Our Commercial team will get
                 back to you shortly.
               </p>
+
+              {/* ✅ También aquí quitamos “download” */}
               <a
                 href={profile.vcard}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#00BFFF] text-[#0B0B28] font-semibold px-4 py-2 rounded-xl hover:opacity-90 text-sm"
               >
-                <Download className="w-4 h-4 mr-2" /> Download my vCard
+                <Download className="w-4 h-4 mr-2" /> Save my Contact
               </a>
+
               <div className="mt-4">
                 <Button
                   onClick={goBack}
