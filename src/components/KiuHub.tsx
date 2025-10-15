@@ -318,7 +318,7 @@ export default function KiuHub({ profile }: { profile: any }) {
               </Button>
               <p className="text-[10px] text-gray-500 text-center">
                 Message will be sent directly to{" "}
-                <span className="text-gray-300">{profile.email}</span>
+                <span className="text-gray-300 font-medium">Commercial Team</span>.
               </p>
             </form>
           ) : (
@@ -327,7 +327,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                 Thanks for connecting!
               </h3>
               <p className="text-sm text-gray-300 mb-4">
-                Your message has been received. Our team will get back to you
+                Your message has been received. Our Commercial team will get back to you
                 shortly.
               </p>
               <a
