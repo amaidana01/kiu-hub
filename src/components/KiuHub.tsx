@@ -6,7 +6,7 @@ import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Info, Play, Mail, ArrowLeft, Download } from "lucide-react";
 
-export default function KiuHub() {
+export default function KiuHub({ profile }: { profile: any }) {
   const [view, setView] = useState("home");
   const [contactSubmitted, setContactSubmitted] = useState(false);
 
@@ -33,16 +33,16 @@ export default function KiuHub() {
               className="w-48 sm:w-60 mx-auto mb-4"
             />
             <h1 className="text-lg sm:text-xl font-semibold text-white">
-              Alejandro Maidana
+              {profile.name}
             </h1>
             <p className="text-xs sm:text-sm text-gray-300">
-              QA Manager | KIU System Solutions
+              {profile.role} | KIU System Solutions
             </p>
             <p className="text-xs text-gray-400">
               Empowering aviation with intelligent technology
             </p>
             <a
-              href="/Alejandro_Maidana.vcf"
+              href={profile.vcard}
               download
               className="flex items-center justify-center gap-2 text-[#00BFFF] text-xs hover:underline mt-2"
             >
@@ -318,7 +318,7 @@ export default function KiuHub() {
               </Button>
               <p className="text-[10px] text-gray-500 text-center">
                 Message will be sent directly to{" "}
-                <span className="text-gray-300">amaidana@kiusys.com</span>
+                <span className="text-gray-300">{profile.email}</span>
               </p>
             </form>
           ) : (
@@ -331,7 +331,7 @@ export default function KiuHub() {
                 shortly.
               </p>
               <a
-                href="/Alejandro_Maidana.vcf"
+                href={profile.vcard}
                 download
                 className="inline-flex items-center justify-center bg-[#00BFFF] text-[#0B0B28] font-semibold px-4 py-2 rounded-xl hover:opacity-90 text-sm"
               >
