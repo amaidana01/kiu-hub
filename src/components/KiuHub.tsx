@@ -6,7 +6,7 @@ import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Info, Play, Mail, ArrowLeft, Download } from "lucide-react";
 
-export default function KiuHub({ profile }: { profile: any }) {
+export default function KiuHub() {
   const [view, setView] = useState("home");
   const [contactSubmitted, setContactSubmitted] = useState(false);
 
@@ -15,17 +15,8 @@ export default function KiuHub({ profile }: { profile: any }) {
     setContactSubmitted(false);
   };
 
-  if (!profile) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center text-white bg-[#0C0E2B]">
-        <h1 className="text-xl font-semibold mb-2">Invalid profile</h1>
-        <p className="text-gray-400 text-sm">No data was provided.</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B] text-white flex flex-col items-center p-4 sm:p-6">
+    <div className="min-h-screen bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B] text-white flex flex-col items-center p-4 sm:p-6 text-[1rem] sm:text-[1.05rem]">
       {/* HOME */}
       {view === "home" && (
         <motion.div
@@ -42,16 +33,16 @@ export default function KiuHub({ profile }: { profile: any }) {
               className="w-48 sm:w-60 mx-auto mb-4"
             />
             <h1 className="text-lg sm:text-xl font-semibold text-white">
-              {profile.name}
+              Alejandro Maidana
             </h1>
             <p className="text-xs sm:text-sm text-gray-300">
-              {profile.role} | KIU System Solutions
+              QA Manager | KIU System Solutions
             </p>
             <p className="text-xs text-gray-400">
               Empowering aviation with intelligent technology
             </p>
             <a
-              href={profile.vcard}
+              href="/Alejandro_Maidana.vcf"
               download
               className="flex items-center justify-center gap-2 text-[#00BFFF] text-xs hover:underline mt-2"
             >
@@ -80,8 +71,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                     transformation for the aviation and travel industry. We
                     deliver cloud-based, AI-powered solutions that empower
                     airlines and travel businesses to operate smarter, faster,
-                    and more efficiently. Discover our flagship conversational
-                    AI — KIUT.
+                    and more efficiently.
                   </p>
                 </div>
               </CardContent>
@@ -146,12 +136,12 @@ export default function KiuHub({ profile }: { profile: any }) {
           transition={{ duration: 0.5 }}
           className="text-left space-y-4 max-w-sm"
         >
-          <button
+          <Button
             onClick={() => setView("home")}
-            className="flex items-center text-sm text-[#00BFFF] hover:underline mb-2"
+            className="mb-4 bg-[#3B257A] text-white hover:opacity-90 text-sm"
           >
-            <ArrowLeft className="w-4 h-4 mr-1" /> Back
-          </button>
+            <ArrowLeft className="w-4 h-4 mr-2" /> Back
+          </Button>
 
           <h2 className="text-lg font-semibold text-white">
             About KIU & Solutions
@@ -189,7 +179,6 @@ export default function KiuHub({ profile }: { profile: any }) {
               className="inline-flex items-center text-[#00BFFF] text-sm hover:underline"
             >
               Visit our official website
-              <ArrowLeft className="rotate-180 w-4 h-4 ml-1" />
             </a>
           </div>
         </motion.div>
@@ -203,12 +192,12 @@ export default function KiuHub({ profile }: { profile: any }) {
           transition={{ duration: 0.5 }}
           className="text-left max-w-sm"
         >
-          <button
+          <Button
             onClick={() => setView("home")}
-            className="flex items-center text-sm text-[#00BFFF] hover:underline mb-2"
+            className="mb-4 bg-[#3B257A] text-white hover:opacity-90 text-sm"
           >
-            <ArrowLeft className="w-4 h-4 mr-1" /> Back
-          </button>
+            <ArrowLeft className="w-4 h-4 mr-2" /> Back
+          </Button>
 
           <h2 className="text-lg font-semibold text-white mb-2">
             KIUT — Our Flagship AI Bot
@@ -247,6 +236,7 @@ export default function KiuHub({ profile }: { profile: any }) {
           >
             <ArrowLeft className="w-4 h-4 mr-2" /> Back
           </Button>
+
           <h2 className="text-lg sm:text-xl font-semibold mb-2">
             Contact & Connect
           </h2>
@@ -327,8 +317,8 @@ export default function KiuHub({ profile }: { profile: any }) {
                 Send to KIU
               </Button>
               <p className="text-[10px] text-gray-500 text-center">
-                Message will be sent directly to our{" "}
-                <span className="text-gray-300">Commercial Team</span>
+                Message will be sent directly to{" "}
+                <span className="text-gray-300">amaidana@kiusys.com</span>
               </p>
             </form>
           ) : (
@@ -341,7 +331,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                 shortly.
               </p>
               <a
-                href={profile.vcard}
+                href="/Alejandro_Maidana.vcf"
                 download
                 className="inline-flex items-center justify-center bg-[#00BFFF] text-[#0B0B28] font-semibold px-4 py-2 rounded-xl hover:opacity-90 text-sm"
               >
