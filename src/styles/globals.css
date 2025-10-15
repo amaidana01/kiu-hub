@@ -90,13 +90,17 @@ body {
 
 /* Asegura scroll en móviles y respeta áreas seguras */
 html, body {
-  height: 100%;
+  min-height: 100%;
   overflow-x: hidden;
-  overscroll-behavior-y: contain;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background-color: #0C0E2B;
-  -webkit-overflow-scrolling: touch; /* Scroll fluido en iOS */
-  padding-bottom: env(safe-area-inset-bottom); /* margen seguro */
+  -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+  padding: 0;
+  margin: 0;
+  padding-bottom: env(safe-area-inset-bottom);
 }
+
 
 
 /* ============================
