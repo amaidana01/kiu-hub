@@ -88,6 +88,16 @@ body {
   }
 }
 
+/* Asegura scroll en móviles y respeta áreas seguras */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  background-color: #0C0E2B;
+  -webkit-overflow-scrolling: touch; /* Scroll fluido en iOS */
+  padding-bottom: env(safe-area-inset-bottom); /* margen seguro */
+}
+
 
 /* ============================
    ✅ RESULTADO

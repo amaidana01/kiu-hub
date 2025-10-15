@@ -16,7 +16,11 @@ export default function KiuHub({ profile }: { profile: any }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B] text-white flex flex-col items-center p-4 sm:p-6 text-[1rem] sm:text-[1.05rem]">
+    <div
+      className="min-h-screen bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B]
+                 text-white flex flex-col items-center p-4 sm:p-6 text-[1rem] sm:text-[1.05rem]
+                 overflow-y-auto overscroll-contain"
+    >
       {/* HOME */}
       {view === "home" && (
         <motion.div
@@ -228,7 +232,7 @@ export default function KiuHub({ profile }: { profile: any }) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-sm"
+          className="w-full max-w-sm pb-10"
         >
           <Button
             className="mb-4 bg-[#3B257A] text-white text-sm"
@@ -318,7 +322,10 @@ export default function KiuHub({ profile }: { profile: any }) {
               </Button>
               <p className="text-[10px] text-gray-500 text-center">
                 Message will be sent directly to{" "}
-                <span className="text-gray-300 font-medium">Commercial Team</span>.
+                <span className="text-gray-300 font-medium">
+                  Commercial Team
+                </span>
+                .
               </p>
             </form>
           ) : (
@@ -327,8 +334,8 @@ export default function KiuHub({ profile }: { profile: any }) {
                 Thanks for connecting!
               </h3>
               <p className="text-sm text-gray-300 mb-4">
-                Your message has been received. Our Commercial team will get back to you
-                shortly.
+                Your message has been received. Our Commercial team will get
+                back to you shortly.
               </p>
               <a
                 href={profile.vcard}
