@@ -82,6 +82,13 @@ body {
   overscroll-behavior: none;
 }
 
+@media (max-width: 640px) {
+  html {
+    font-size: 17px; /* antes 16px por defecto */
+  }
+}
+
+
 /* ============================
    ✅ RESULTADO
    - Fondo gradiente siempre visible
