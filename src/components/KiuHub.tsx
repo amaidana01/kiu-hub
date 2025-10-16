@@ -57,7 +57,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* ABOUT FIRST */}
             <Card
               onClick={() => setView("about")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#241763] transition-all"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -73,6 +73,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                     deliver cloud-based, AI-powered solutions that empower
                     airlines and travel businesses to operate smarter, faster,
                     and more efficiently.
+                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
                   </p>
                 </div>
               </CardContent>
@@ -81,7 +82,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* AI BOT SECOND */}
             <Card
               onClick={() => setView("demo")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#241763] transition-all"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -95,6 +96,8 @@ export default function KiuHub({ profile }: { profile: any }) {
                     Experience how KIU revolutionizes customer interaction
                     through artificial intelligence, enabling seamless,
                     multilingual, and personalized communication.
+                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
+
                   </p>
                 </div>
               </CardContent>
@@ -103,7 +106,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* CONTACT THIRD */}
             <Card
               onClick={() => setView("contact")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#241763] transition-all"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -116,6 +119,8 @@ export default function KiuHub({ profile }: { profile: any }) {
                   <p className="text-xs text-gray-300">
                     Share your details with KIU’s team and discover how we can
                     collaborate to shape the future of air travel.
+                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
+
                   </p>
                 </div>
               </CardContent>
