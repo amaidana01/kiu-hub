@@ -50,13 +50,18 @@ export default function KiuHub({ profile }: { profile: any }) {
               Empowering aviation with intelligent technology
             </p>
             <a
-              href={profile.vcard}
-              download
-              className="flex items-center justify-center gap-2 text-[#00BFFF] text-xs hover:underline mt-2"
+              href={`/api/vcard?user=${profile.vcard.replace("/", "").replace(".vcf", "")}`}
+              className="inline-flex items-center justify-center bg-[#00BFFF] text-[#0B0B28] font-semibold px-4 py-2 rounded-xl hover:opacity-90 text-sm"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `/api/vcard?user=${profile.vcard
+                 .replace("/", "")
+                 .replace(".vcf", "")}`;
+              }}
             >
-              <Download className="w-3 h-3" />
-              Download my vCard
-            </a>
+             <Download className="w-4 h-4 mr-2" /> Download my vCard
+           </a>
+
           </div>
 
           {/* MAIN CARDS */}
@@ -351,12 +356,18 @@ export default function KiuHub({ profile }: { profile: any }) {
                 back to you shortly.
               </p>
               <a
-                href={profile.vcard}
-                download
+                href={`/api/vcard?user=${profile.vcard.replace("/", "").replace(".vcf", "")}`}
                 className="inline-flex items-center justify-center bg-[#00BFFF] text-[#0B0B28] font-semibold px-4 py-2 rounded-xl hover:opacity-90 text-sm"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = `/api/vcard?user=${profile.vcard
+                  .replace("/", "")
+                  .replace(".vcf", "")}`;
+                }}
               >
                 <Download className="w-4 h-4 mr-2" /> Download my vCard
               </a>
+
               <div className="mt-4">
                 <Button
                   onClick={goBack}
