@@ -1,23 +1,30 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Info, Play, Mail, ArrowLeft, Download } from "lucide-react";
 
 export default function KiuHub({ profile }: { profile: any }) {
+  // --- Fix Hydration ---
+  const [isClient, setIsClient] = useState(false);
   const [view, setView] = useState("home");
   const [contactSubmitted, setContactSubmitted] = useState(false);
+
+  useEffect(() => setIsClient(true), []);
+  // ----------------------
 
   const goBack = () => {
     setView("home");
     setContactSubmitted(false);
   };
 
-  return (
-    <div className="min-h-screen overflow-y-auto overscroll-contain bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B] text-white flex flex-col items-center p-4 sm:p-6 text-[1rem] sm:text-[1.05rem]">
+  if (!isClient) return null; // ← MOVER AQUÍ
 
+
+  return (
+    <div className="h-[100dvh] overflow-y-auto overscroll-none bg-gradient-to-b from-[#180B3A] via-[#2E0E73] to-[#0C0E2B] text-white flex flex-col items-center p-4 sm:p-6 text-[1rem] sm:text-[1.05rem]">
       {/* HOME */}
       {view === "home" && (
         <motion.div
@@ -57,7 +64,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* ABOUT FIRST */}
             <Card
               onClick={() => setView("about")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -73,7 +80,9 @@ export default function KiuHub({ profile }: { profile: any }) {
                     deliver cloud-based, AI-powered solutions that empower
                     airlines and travel businesses to operate smarter, faster,
                     and more efficiently.
-                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
+                  </p>
+                  <p className="text-[12px] text-[#00BFFF] mt-1">
+                    Tap to explore →
                   </p>
                 </div>
               </CardContent>
@@ -82,7 +91,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* AI BOT SECOND */}
             <Card
               onClick={() => setView("demo")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#FFD70033] transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -96,8 +105,9 @@ export default function KiuHub({ profile }: { profile: any }) {
                     Experience how KIU revolutionizes customer interaction
                     through artificial intelligence, enabling seamless,
                     multilingual, and personalized communication.
-                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
-
+                  </p>
+                  <p className="text-[12px] text-[#00BFFF] mt-1">
+                    Tap to explore →
                   </p>
                 </div>
               </CardContent>
@@ -106,7 +116,7 @@ export default function KiuHub({ profile }: { profile: any }) {
             {/* CONTACT THIRD */}
             <Card
               onClick={() => setView("contact")}
-              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#00BFFF33] animate-pulse-slow transition-all duration-300"
+              className="cursor-pointer bg-[#1B1346] hover:bg-[#2D1A7A] shadow-[0_0_10px_#7CFC0033] transition-all duration-300"
             >
               <CardContent className="flex items-center p-3 sm:p-4 gap-4">
                 <div className="rounded-xl bg-[#3A2A8C] p-2">
@@ -119,8 +129,9 @@ export default function KiuHub({ profile }: { profile: any }) {
                   <p className="text-xs text-gray-300">
                     Share your details with KIU’s team and discover how we can
                     collaborate to shape the future of air travel.
-                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
-
+                  </p>
+                  <p className="text-[12px] text-[#00BFFF] mt-1">
+                    Tap to explore →
                   </p>
                 </div>
               </CardContent>
@@ -163,8 +174,8 @@ export default function KiuHub({ profile }: { profile: any }) {
           </p>
 
           <p className="text-sm text-gray-300 leading-relaxed">
-            Our suite of products covers Passenger Service Systems (PSS),
-            e-commerce, distribution, operations, and AI-powered automation.
+            Our suite of products covers <strong className="text-white">Passenger Service Systems (PSS),
+            e-commerce, distribution, operations, and AI-powered automation.</strong>
             KIU’s technology is scalable, accessible, and future-ready —
             enabling our partners to grow seamlessly in an evolving digital
             landscape.
