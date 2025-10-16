@@ -101,6 +101,7 @@ html, body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+/* Glow
 @keyframes pulse-slow {
   0%, 100% { box-shadow: 0 0 10px rgba(0, 191, 255, 0.15); }
   50% { box-shadow: 0 0 16px rgba(0, 191, 255, 0.3); }
@@ -109,6 +110,7 @@ html, body {
 .animate-pulse-slow {
   animation: pulse-slow 3s ease-in-out infinite;
 }
+*/
 
 /* ============================
    ✅ RESULTADO

@@ -73,7 +73,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                     deliver cloud-based, AI-powered solutions that empower
                     airlines and travel businesses to operate smarter, faster,
                     and more efficiently.
-                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
+                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
                   </p>
                 </div>
               </CardContent>
@@ -96,7 +96,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                     Experience how KIU revolutionizes customer interaction
                     through artificial intelligence, enabling seamless,
                     multilingual, and personalized communication.
-                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
+                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
 
                   </p>
                 </div>
@@ -119,7 +119,7 @@ export default function KiuHub({ profile }: { profile: any }) {
                   <p className="text-xs text-gray-300">
                     Share your details with KIU’s team and discover how we can
                     collaborate to shape the future of air travel.
-                    <p className="text-[11px] text-[#00BFFF] mt-1">Tap to explore →</p>
+                    <p className="text-[12px] text-[#00BFFF] mt-1">Tap to explore →</p>
 
                   </p>
                 </div>
@@ -318,7 +318,7 @@ export default function KiuHub({ profile }: { profile: any }) {
 
               <Button
                 type="submit"
-                className="w-full bg-[#00BFFF] text-[#0B0B28] hover:opacity-90 text-sm"
+                className="w-full bg-[#00BFFF] hover:opacity-90 text-sm"
               >
                 Send to KIU
               </Button>
