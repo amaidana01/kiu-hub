@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Zapata;Manuel;;;
+FN:Manuel Zapata
+ORG:KIU System Solutions
+TITLE:CCO
+EMAIL;TYPE=WORK:mzapata@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/manuel-zp
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Manuel Zapata
+END:VCARD

@@ -175,7 +175,7 @@ export default function KiuHub({ profile }: { profile: any }) {
 
           <p className="text-sm text-gray-300 leading-relaxed">
             Our suite of products covers <strong className="text-white">Passenger Service Systems (PSS),
-            e-commerce, distribution, operations, and AI-powered automation.</strong>
+            e-commerce, distribution, operations, and AI-powered automation. </strong>
             KIU’s technology is scalable, accessible, and future-ready —
             enabling our partners to grow seamlessly in an evolving digital
             landscape.

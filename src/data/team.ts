@@ -104,4 +104,20 @@ export const team: Record<string, TeamProfile> = {
     linkedin: "https://www.linkedin.com/in/matias-castilla-2282447/",
     qr: "/qrs/QR_MatiasCastilla.png",
   },
+  mzapata: {
+    name: "Manuel Zapata",
+    role: "CCO",
+    email: "mzapata@kiusys.com",
+    vcard: "/Manuel_Zapata.vcf",
+    linkedin: "https://www.linkedin.com/in/manuel-zp/",
+    qr: "/qrs/QR_ManuelZapata.png",
+  },
+  jrestrepo: {
+    name: "Juan Restrepo",
+    role: "CPO",
+    email: "jrestrepo@kiusys.com",
+    vcard: "/Juan_Restrepo.vcf",
+    linkedin: "https://www.linkedin.com/in/jfrestrepo/",
+    qr: "/qrs/QR_JuanRestrepo.png",
+  },
 };

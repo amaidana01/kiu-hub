@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Restrepo;Juan;;;
+FN:Juan Restrepo
+ORG:KIU System Solutions
+TITLE:CPO
+EMAIL;TYPE=WORK:jrestrepo@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/jfrestrepo
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Juan Restrepo
+END:VCARD
