@@ -28,10 +28,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     await transporter.sendMail({
       from: `"KIU Hub Contact" <${process.env.MAIL_USER}>`,
       to: ["amaidana@kiusys.com"], // podes agregar más destinatarios , "commercial@kiusys.com"
-      subject: "✈️ New contact from KIU Hub (AWS Vegas)",
+      subject: "✈️ New contact from KIU Hub",
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #222;">
-          <h2 style="color: #5A2BC8;">New Lead from AWS Las Vegas</h2>
+          <h2 style="color: #5A2BC8;">New Lead from KIU Hub</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Company:</strong> ${company || "N/A"}</p>
           <p><strong>Email:</strong> ${email}</p>

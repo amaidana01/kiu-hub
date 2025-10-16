@@ -235,7 +235,7 @@ export default function KiuHub({ profile }: { profile: any }) {
           <div className="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-white/10">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/E1_iYb7N-VU"
+              src="https://www.youtube.com/embed/YBQ9MWszCIM"
               title="KIUT AI Demo"
               frameBorder="0"
               allowFullScreen
