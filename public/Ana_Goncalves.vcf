@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gonçalves;Ana Laura;;;
+FN:Ana Laura Gonçalves
+ORG:KIU System Solutions
+TITLE:Customer Care Director
+EMAIL;TYPE=WORK:agoncalves@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/ana-laura-goncalves-11384319a
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Ana Laura Gonçalves
+END:VCARD

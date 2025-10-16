@@ -120,4 +120,12 @@ export const team: Record<string, TeamProfile> = {
     linkedin: "https://www.linkedin.com/in/jfrestrepo/",
     qr: "/qrs/QR_JuanRestrepo.png",
   },
+  agoncalves: {
+    name: "Ana Laura Gonçalves",
+    role: "Customer Care Director",
+    email: "agoncalves@kiusys.com",
+    vcard: "/Ana_Goncalves.vcf",
+    linkedin: "https://www.linkedin.com/in/ana-laura-goncalves-11384319a/",
+    qr: "/qrs/QR_AnaLauraGoncalves.png",
+  },
 };
