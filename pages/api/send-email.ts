@@ -27,7 +27,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // 📧 Envío del correo
     await transporter.sendMail({
       from: `"KIU Hub Contact" <${process.env.MAIL_USER}>`,
-      to: ["amaidana@kiusys.com"], // podes agregar más destinatarios , "commercial@kiusys.com"
+      to: ["amaidana@kiusys.com","commercial@kiusys.com"], // podes agregar más destinatarios , "commercial@kiusys.com"
       subject: "✈️ New contact from KIU Hub",
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #222;">
