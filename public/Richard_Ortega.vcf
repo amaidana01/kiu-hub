@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ortega;Richard;;;
+FN:Richard Ortega
+ORG:KIU System Solutions
+TITLE:Commercial Director
+EMAIL;TYPE=WORK:rortega@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/richard-o-0908321
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Richard Ortega
+END:VCARD

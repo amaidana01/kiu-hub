@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Whittle;Rodger;;;
+FN:Rodger Whittle
+ORG:KIU System Solutions
+TITLE:Commercial Director - Africa
+EMAIL;TYPE=WORK:rwhittle@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/rodger-whittle-47900a247
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Rodger Whittle
+END:VCARD

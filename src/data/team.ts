@@ -128,4 +128,28 @@ export const team: Record<string, TeamProfile> = {
     linkedin: "https://www.linkedin.com/in/ana-laura-goncalves-11384319a/",
     qr: "/qrs/QR_AnaLauraGoncalves.png",
   },
+  rwhittle: {
+    name: "Rodger Whittle",
+    role: "Commercial Director - Africa",
+    email: "rwhittle@kiusys.com",
+    vcard: "/Rodger_Whittle.vcf",
+    linkedin: "https://www.linkedin.com/in/rodger-whittle-47900a247/",
+    qr: "/qrs/QR_RodgerWhittle.png",
+  },
+  iyusoff: {
+    name: "Ilias Yusoff",
+    role: "Commercial Director | Southeast Asia",
+    email: "iyusoff@kiusys.com",
+    vcard: "/Ilias_Yusoff.vcf",
+    linkedin: "https://www.linkedin.com/in/kelioputra/",
+    qr: "/qrs/QR_IliasYusoff.png",
+  },
+  rortega: {
+    name: "Richard Ortega",
+    role: "Commercial Director",
+    email: "rortega@kiusys.com",
+    vcard: "/Richard_Ortega.vcf",
+    linkedin: "https://www.linkedin.com/in/richard-o-0908321/",
+    qr: "/qrs/QR_RichardOrtega.png",
+  },
 };
