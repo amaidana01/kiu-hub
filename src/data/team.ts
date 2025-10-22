@@ -208,4 +208,12 @@ export const team: Record<string, TeamProfile> = {
     linkedin: "https://www.linkedin.com/in/veronica-andrea-campos/",
     qr: "/qrs/QR_VeronicaCampos.png",
   },
+  agonzalez: {
+    name: "Agustina González Lucietto",
+    role: "Marketing Specialist",
+    email: "agonzalez@kiusys.com",
+    vcard: "/Agustina_Gonzalez.vcf",
+    linkedin: "https://www.linkedin.com/in/agustinagonzalezlucietto/",
+    qr: "/qrs/QR_AgustinaGonzalez.png",
+  }
 };

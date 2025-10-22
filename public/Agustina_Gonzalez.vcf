@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:González Lucietto;Agustina;;;
+FN:Agustina González Lucietto
+ORG:KIU System Solutions
+TITLE:Marketing Specialist
+EMAIL;TYPE=WORK:agonzalez@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/agustinagonzalezlucietto
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Agustina González Lucietto
+END:VCARD
