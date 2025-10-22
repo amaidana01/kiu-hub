@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:De Vito;Marcelo;;;
+FN:Marcelo De Vito
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:mdevito@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/marcelo-de-vito-37897815
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Marcelo De Vito
+END:VCARD

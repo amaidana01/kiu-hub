@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Samaria;Daniel;;;
+FN:Daniel Samaria
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:dsamaria@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/daniel-samaria-487660157
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Daniel Samaria
+END:VCARD

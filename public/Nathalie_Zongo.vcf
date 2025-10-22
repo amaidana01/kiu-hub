@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Zongo;Nathalie;;;
+FN:Nathalie Zongo
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:nzongo@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/nathalie-zongo-50415746
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Nathalie Zongo
+END:VCARD

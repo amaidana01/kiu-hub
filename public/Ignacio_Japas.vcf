@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Japas;Ignacio;;;
+FN:Ignacio Japas
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:ijapas@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/ignacio-daniel-japas-a86b87113
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Ignacio Japas
+END:VCARD

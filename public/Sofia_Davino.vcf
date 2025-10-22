@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:D'Avino;Sofía;;;
+FN:Sofía D'Avino
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:sdavino@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/sofía-d-avino-6a989a105
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Sofía D'Avino
+END:VCARD

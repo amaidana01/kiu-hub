@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Campos;Verónica;;;
+FN:Verónica Campos
+ORG:KIU System Solutions
+TITLE:Account Executive
+EMAIL;TYPE=WORK:vcampos@kiusys.com
+URL:https://www.kiusys.com
+item1.URL;type=pref:https://www.linkedin.com/in/veronica-andrea-campos
+item1.X-ABLabel:LinkedIn
+NOTE:KIUSYS - Verónica Campos
+END:VCARD
