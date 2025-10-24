@@ -216,4 +216,12 @@ export const team: Record<string, TeamProfile> = {
     linkedin: "https://www.linkedin.com/in/agustinagonzalezlucietto/",
     qr: "/qrs/QR_AgustinaGonzalez.png",
   }
+  undefined: {
+    name: "undefined undefined",
+    role: "undefined",
+    email: "undefined",
+    vcard: "/undefined_undefined.vcf",
+    linkedin: "undefined",
+    qr: "/qrs/QR_undefinedundefined.png",
+  },
 };
