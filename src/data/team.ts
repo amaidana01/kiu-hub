@@ -215,5 +215,13 @@ export const team: Record<string, TeamProfile> = {
     vcard: "/Agustina_Gonzalez.vcf",
     linkedin: "https://www.linkedin.com/in/agustinagonzalezlucietto/",
     qr: "/qrs/QR_AgustinaGonzalez.png",
-  }
+  },
+  nblanco: {
+    name: "Naikely Blanco",
+    role: "Account Executive",
+    email: "nblanco@kiusys.com",
+    vcard: "/Naikely_Blanco.vcf",
+    linkedin: "",
+    qr: "/qrs/QR_NaikelyBlanco.png",
+  },
 };
